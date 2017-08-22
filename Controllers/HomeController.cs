@@ -13,34 +13,41 @@ namespace aspnetapp.Controllers
     {   
         private readonly IExceptionLogger _logger;
         private readonly ILogger _log;
+        private readonly IManagedTracer _tracer;
         
-        public HomeController(IExceptionLogger exceptionLogger, ILoggerFactory loggerFactory)
+        public HomeController(IExceptionLogger exceptionLogger, ILoggerFactory loggerFactory, IManagedTracer tracer)
         {
             _log = loggerFactory.CreateLogger<HomeController>();
             _logger = exceptionLogger;
+            _tracer = tracer;
         }
         
         public IActionResult Index()
         {
-            throw new Exception("faahssds");
-            return View();
+            using (_tracer.StartSpan(nameof(Index)))
+            {
+                return View();
+            }
         }
 
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
             
-            try
+            using (_tracer.StartSpan(nameof(Index)))
             {
-                throw new Exception("this is shiiite");
+                try
+                {
+                    throw new Exception("this is shiiite");
+                }
+                catch (Exception ex)
+                {
+                    _log.LogInformation("hello friends");
+                    _logger.Log(ex, this.HttpContext);
+                }
+                
+                return View();
             }
-            catch (Exception ex)
-            {
-                _log.LogInformation("hello friends");
-                _logger.Log(ex, this.HttpContext);
-            }
-
-            return View();
         }
 
         public IActionResult Contact()

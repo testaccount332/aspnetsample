@@ -38,6 +38,11 @@ namespace aspnetapp
                 options.Version = version;
             });
             
+            services.AddGoogleTrace(options =>
+            {
+                options.ProjectId = projectId;
+            });
+            
             // Add framework services.
             services
                 .AddMvc(x =>
@@ -50,6 +55,7 @@ namespace aspnetapp
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             app.UseGoogleExceptionLogging();
+            app.UseGoogleTrace();
             
             string projectId = "lloyd-test";
             loggerFactory.AddGoogle(projectId);
