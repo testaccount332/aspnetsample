@@ -7,10 +7,12 @@ namespace aspnetapp.Filters
         public class ExceptionFilter : IExceptionFilter
         {
             private readonly IExceptionLogger _logger;
+            private readonly ILogger _log;
         
-            public ExceptionFilter(IExceptionLogger exceptionLogger)
+            public ExceptionFilter(IExceptionLogger exceptionLogger, ILogger logger)
             {
                 _logger = exceptionLogger;
+                _log.LogError("fuck that");
             }
         
             public void OnException(ExceptionContext context)
