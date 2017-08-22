@@ -9,16 +9,13 @@ namespace aspnetapp.Filters
             private readonly IExceptionLogger _logger;
             private readonly ILogger _log;
         
-            public ExceptionFilter(IExceptionLogger exceptionLogger, ILogger logger)
+            public ExceptionFilter(IExceptionLogger exceptionLogger)
             {
                 _logger = exceptionLogger;
-                _log = logger;
             }
         
             public void OnException(ExceptionContext context)
             {
-                _log.Error("fuck that");
-
                 _logger.Log(context.Exception, context.HttpContext);
             }
         }

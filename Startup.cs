@@ -1,4 +1,5 @@
 ﻿using aspnetapp.Filters;
+using Google.Api.Gax.Grpc;
 using Google.Cloud.Diagnostics.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -49,6 +50,7 @@ namespace aspnetapp
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             app.UseGoogleExceptionLogging();
+            
             string projectId = "lloyd-test";
             loggerFactory.AddGoogle(projectId);
             loggerFactory.AddConsole();
