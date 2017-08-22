@@ -14,10 +14,9 @@ namespace aspnetapp.Controllers
         private readonly IExceptionLogger _logger;
         private readonly ILogger _log;
         
-        public HomeController(IExceptionLogger exceptionLogger, ILogger logger)
+        public HomeController(IExceptionLogger exceptionLogger)
         {
             _logger = exceptionLogger;
-            _log = logger;
         }
         
         public IActionResult Index()

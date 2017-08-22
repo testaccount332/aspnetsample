@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e5037cb-f413-4af4-94bc-4dad486e59b1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.aspnetapp/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.aspnetapp/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" afterPath="$PROJECT_DIR$/Controllers/HomeController.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kubes/deployment.yaml" afterPath="$PROJECT_DIR$/kubes/deployment.yaml" />
     </list>
@@ -76,19 +77,19 @@
       <file leaf-file-name="HomeController.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controllers/HomeController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+            <state relative-caret-position="285">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
-                <marker date="1503409732000" expanded="true" signature="6:238" ph="..." />
-                <marker date="1503409732000" expanded="true" signature="271:1395" ph="{...}" />
-                <marker date="1503409732000" expanded="true" signature="318:1393" ph="{...}" />
-                <marker date="1503409732000" expanded="true" signature="506:592" ph="{...}" />
-                <marker date="1503409732000" expanded="true" signature="638:730" ph="{...}" />
-                <marker date="1503409732000" expanded="true" signature="768:1158" ph="{...}" />
-                <marker date="1503409732000" expanded="true" signature="879:963" ph="{...}" />
-                <marker date="1503409732000" expanded="true" signature="996:1120" ph="{...}" />
-                <marker date="1503409732000" expanded="true" signature="1198:1302" ph="{...}" />
-                <marker date="1503409732000" expanded="true" signature="1340:1387" ph="{...}" />
+                <marker date="1503410506000" expanded="true" signature="6:238" ph="..." />
+                <marker date="1503410506000" expanded="true" signature="271:1352" ph="{...}" />
+                <marker date="1503410506000" expanded="true" signature="318:1350" ph="{...}" />
+                <marker date="1503410506000" expanded="true" signature="490:549" ph="{...}" />
+                <marker date="1503410506000" expanded="true" signature="595:687" ph="{...}" />
+                <marker date="1503410506000" expanded="true" signature="725:1115" ph="{...}" />
+                <marker date="1503410506000" expanded="true" signature="836:920" ph="{...}" />
+                <marker date="1503410506000" expanded="true" signature="953:1077" ph="{...}" />
+                <marker date="1503410506000" expanded="true" signature="1155:1259" ph="{...}" />
+                <marker date="1503410506000" expanded="true" signature="1297:1344" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -163,9 +164,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/kubes/deployment.yaml" />
         <option value="$PROJECT_DIR$/Startup.cs" />
         <option value="$PROJECT_DIR$/Filters/ExceptionFilter.cs" />
+        <option value="$PROJECT_DIR$/kubes/deployment.yaml" />
         <option value="$PROJECT_DIR$/Controllers/HomeController.cs" />
       </list>
     </option>
@@ -409,12 +410,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1503399845799</updated>
-      <workItem from="1503399847418" duration="6341000" />
+      <workItem from="1503399847418" duration="6803000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6341000" />
+    <option name="totallyTimeSpent" value="6803000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -498,19 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1503399685000" expanded="true" signature="6:149" ph="..." />
-            <marker date="1503399685000" expanded="true" signature="170:544" ph="{...}" />
-            <marker date="1503399685000" expanded="true" signature="197:542" ph="{...}" />
-            <marker date="1503399685000" expanded="true" signature="250:536" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appsettings.Development.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -549,6 +537,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kubes/deployment.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="80" lean-forward="false" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
@@ -567,11 +563,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kubes/deployment.yaml">
+    <entry file="file://$PROJECT_DIR$/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="80" lean-forward="false" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1503399685000" expanded="true" signature="6:149" ph="..." />
+            <marker date="1503399685000" expanded="true" signature="170:544" ph="{...}" />
+            <marker date="1503399685000" expanded="true" signature="197:542" ph="{...}" />
+            <marker date="1503399685000" expanded="true" signature="250:536" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -591,19 +592,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/HomeController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <marker date="1503409732000" expanded="true" signature="6:238" ph="..." />
-            <marker date="1503409732000" expanded="true" signature="271:1395" ph="{...}" />
-            <marker date="1503409732000" expanded="true" signature="318:1393" ph="{...}" />
-            <marker date="1503409732000" expanded="true" signature="506:592" ph="{...}" />
-            <marker date="1503409732000" expanded="true" signature="638:730" ph="{...}" />
-            <marker date="1503409732000" expanded="true" signature="768:1158" ph="{...}" />
-            <marker date="1503409732000" expanded="true" signature="879:963" ph="{...}" />
-            <marker date="1503409732000" expanded="true" signature="996:1120" ph="{...}" />
-            <marker date="1503409732000" expanded="true" signature="1198:1302" ph="{...}" />
-            <marker date="1503409732000" expanded="true" signature="1340:1387" ph="{...}" />
+            <marker date="1503410506000" expanded="true" signature="6:238" ph="..." />
+            <marker date="1503410506000" expanded="true" signature="271:1352" ph="{...}" />
+            <marker date="1503410506000" expanded="true" signature="318:1350" ph="{...}" />
+            <marker date="1503410506000" expanded="true" signature="490:549" ph="{...}" />
+            <marker date="1503410506000" expanded="true" signature="595:687" ph="{...}" />
+            <marker date="1503410506000" expanded="true" signature="725:1115" ph="{...}" />
+            <marker date="1503410506000" expanded="true" signature="836:920" ph="{...}" />
+            <marker date="1503410506000" expanded="true" signature="953:1077" ph="{...}" />
+            <marker date="1503410506000" expanded="true" signature="1155:1259" ph="{...}" />
+            <marker date="1503410506000" expanded="true" signature="1297:1344" ph="{...}" />
           </folding>
         </state>
       </provider>
