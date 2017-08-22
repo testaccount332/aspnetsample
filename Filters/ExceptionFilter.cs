@@ -1,6 +1,6 @@
-﻿using Google.Cloud.Diagnostics.Common;
+﻿using Google.Apis.Logging;
+using Google.Cloud.Diagnostics.Common;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Microsoft.Extensions.Logging;
 
 namespace aspnetapp.Filters
 {
@@ -17,7 +17,7 @@ namespace aspnetapp.Filters
         
             public void OnException(ExceptionContext context)
             {
-                _log.LogError("fuck that");
+                _log.Error("fuck that");
 
                 _logger.Log(context.Exception, context.HttpContext);
             }
