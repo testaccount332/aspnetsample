@@ -1,12 +1,10 @@
-﻿
-using aspnetapp.Filters;
+﻿using aspnetapp.Filters;
+using Google.Cloud.Diagnostics.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Serilog;
-using Serilog.Formatting.Json;
 
 namespace aspnetapp
 {
@@ -21,10 +19,6 @@ namespace aspnetapp
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
             
-            Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Verbose()
-                .WriteTo.Console(new JsonFormatter())
-                .CreateLogger();
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -32,6 +26,17 @@ namespace aspnetapp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            string projectId = "lloyd-test";
+            string serviceName = "aspnet";
+            string version = "1.0";
+
+            services.AddGoogleExceptionLogging(options =>
+            {
+                options.ProjectId = projectId;
+                options.ServiceName = serviceName;
+                options.Version = version;
+            });
+            
             // Add framework services.
             services
                 .AddMvc(x =>
@@ -43,7 +48,9 @@ namespace aspnetapp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddSerilog();
+            app.UseGoogleExceptionLogging();
+            string projectId = "lloyd-test";
+            loggerFactory.AddGoogle(projectId);
 
             app.UseStaticFiles();
 

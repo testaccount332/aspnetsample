@@ -1,0 +1,34 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: aspnet
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: aspnet
+  template:
+    metadata:
+      labels:
+        app: aspnet
+    spec:
+      containers:
+      - env:
+        image: gcr.io/lloyd-test/aspnet:8f4fa81dd6d68ea09ff3d8c3e263bdd15cff413c
+        name: aspnet
+        ports:
+        - name: payments-port
+          containerPort: 80
+        readinessProbe:
+          httpGet:
+            path: /home/about
+            port: payments-port
+            httpHeaders:
+              - name: X-Requested-With
+                value: ReadinessProbe
+          initialDelaySeconds: 15
+          periodSeconds: 60
+          timeoutSeconds: 5
+          failureThreshold: 1
+          successThreshold: 1
+status: {}

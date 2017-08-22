@@ -3,7 +3,6 @@ using Microsoft.Extensions.Logging;
 
 namespace aspnetapp.Filters
 {
-
         public class ExceptionFilter : IExceptionFilter
         {
             private readonly ILogger _logger;
