@@ -51,6 +51,7 @@ namespace aspnetapp
             app.UseGoogleExceptionLogging();
             string projectId = "lloyd-test";
             loggerFactory.AddGoogle(projectId);
+            loggerFactory.AddConsole();
 
             app.UseStaticFiles();
 
