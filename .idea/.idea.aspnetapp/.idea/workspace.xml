@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e5037cb-f413-4af4-94bc-4dad486e59b1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" afterPath="$PROJECT_DIR$/Controllers/HomeController.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Filters/ExceptionFilter.cs" afterPath="$PROJECT_DIR$/Filters/ExceptionFilter.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kubes/deployment.yaml" afterPath="$PROJECT_DIR$/kubes/deployment.yaml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,36 +50,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HomeController.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controllers/HomeController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="384">
+              <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
               <folding>
-                <marker date="1503401201000" expanded="true" signature="6:164" ph="..." />
-                <marker date="1503401201000" expanded="true" signature="197:777" ph="{...}" />
-                <marker date="1503401201000" expanded="true" signature="244:775" ph="{...}" />
-                <marker date="1503401201000" expanded="true" signature="290:382" ph="{...}" />
-                <marker date="1503401201000" expanded="true" signature="420:540" ph="{...}" />
-                <marker date="1503401201000" expanded="true" signature="580:684" ph="{...}" />
-                <marker date="1503401201000" expanded="true" signature="722:769" ph="{...}" />
+                <marker date="1503407543000" expanded="true" signature="6:247" ph="..." />
+                <marker date="1503407543000" expanded="true" signature="280:1359" ph="{...}" />
+                <marker date="1503407543000" expanded="true" signature="327:1357" ph="{...}" />
+                <marker date="1503407543000" expanded="true" signature="515:601" ph="{...}" />
+                <marker date="1503407543000" expanded="true" signature="647:739" ph="{...}" />
+                <marker date="1503407543000" expanded="true" signature="777:1122" ph="{...}" />
+                <marker date="1503407543000" expanded="true" signature="888:972" ph="{...}" />
+                <marker date="1503407543000" expanded="true" signature="1005:1084" ph="{...}" />
+                <marker date="1503407543000" expanded="true" signature="1162:1266" ph="{...}" />
+                <marker date="1503407543000" expanded="true" signature="1304:1351" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExceptionFilter.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ExceptionFilter.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Filters/ExceptionFilter.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding>
-                <marker date="1503407367000" expanded="true" signature="6:114" ph="..." />
-                <marker date="1503407367000" expanded="true" signature="143:698" ph="{...}" />
-                <marker date="1503407367000" expanded="true" signature="201:696" ph="{...}" />
-                <marker date="1503407367000" expanded="true" signature="403:518" ph="{...}" />
-                <marker date="1503407367000" expanded="true" signature="589:686" ph="{...}" />
+                <marker date="1503407446000" expanded="true" signature="6:114" ph="..." />
+                <marker date="1503407446000" expanded="true" signature="143:730" ph="{...}" />
+                <marker date="1503407446000" expanded="true" signature="201:728" ph="{...}" />
+                <marker date="1503407446000" expanded="true" signature="403:505" ph="{...}" />
+                <marker date="1503407446000" expanded="true" signature="576:718" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Index.cshtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/Home/Index.cshtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,6 +138,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Shared/Error.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -133,10 +147,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/Startup.cs" />
         <option value="$PROJECT_DIR$/kubes/deployment.yaml" />
         <option value="$PROJECT_DIR$/Filters/ExceptionFilter.cs" />
+        <option value="$PROJECT_DIR$/Controllers/HomeController.cs" />
       </list>
     </option>
   </component>
@@ -198,6 +212,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aspnetapp (1 project)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aspnetapp" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
               <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -357,12 +393,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1503399845799</updated>
-      <workItem from="1503399847418" duration="4380000" />
+      <workItem from="1503399847418" duration="4561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4380000" />
+    <option name="totallyTimeSpent" value="4561000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -435,22 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/HomeController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <marker date="1503401201000" expanded="true" signature="6:164" ph="..." />
-            <marker date="1503401201000" expanded="true" signature="197:777" ph="{...}" />
-            <marker date="1503401201000" expanded="true" signature="244:775" ph="{...}" />
-            <marker date="1503401201000" expanded="true" signature="290:382" ph="{...}" />
-            <marker date="1503401201000" expanded="true" signature="420:540" ph="{...}" />
-            <marker date="1503401201000" expanded="true" signature="580:684" ph="{...}" />
-            <marker date="1503401201000" expanded="true" signature="722:769" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kubes/service.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -485,16 +505,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Home/Index.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Filters/ExceptionFilter.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding>
-            <marker date="1503407367000" expanded="true" signature="6:114" ph="..." />
-            <marker date="1503407367000" expanded="true" signature="143:698" ph="{...}" />
-            <marker date="1503407367000" expanded="true" signature="201:696" ph="{...}" />
-            <marker date="1503407367000" expanded="true" signature="403:518" ph="{...}" />
-            <marker date="1503407367000" expanded="true" signature="589:686" ph="{...}" />
+            <marker date="1503407446000" expanded="true" signature="6:114" ph="..." />
+            <marker date="1503407446000" expanded="true" signature="143:730" ph="{...}" />
+            <marker date="1503407446000" expanded="true" signature="201:728" ph="{...}" />
+            <marker date="1503407446000" expanded="true" signature="403:505" ph="{...}" />
+            <marker date="1503407446000" expanded="true" signature="576:718" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding>
+            <marker date="1503407543000" expanded="true" signature="6:247" ph="..." />
+            <marker date="1503407543000" expanded="true" signature="280:1359" ph="{...}" />
+            <marker date="1503407543000" expanded="true" signature="327:1357" ph="{...}" />
+            <marker date="1503407543000" expanded="true" signature="515:601" ph="{...}" />
+            <marker date="1503407543000" expanded="true" signature="647:739" ph="{...}" />
+            <marker date="1503407543000" expanded="true" signature="777:1122" ph="{...}" />
+            <marker date="1503407543000" expanded="true" signature="888:972" ph="{...}" />
+            <marker date="1503407543000" expanded="true" signature="1005:1084" ph="{...}" />
+            <marker date="1503407543000" expanded="true" signature="1162:1266" ph="{...}" />
+            <marker date="1503407543000" expanded="true" signature="1304:1351" ph="{...}" />
           </folding>
         </state>
       </provider>

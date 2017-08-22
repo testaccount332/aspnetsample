@@ -12,11 +12,13 @@ namespace aspnetapp.Filters
             public ExceptionFilter(IExceptionLogger exceptionLogger, ILogger logger)
             {
                 _logger = exceptionLogger;
-                _log.LogError("fuck that");
+                _log = logger;
             }
         
             public void OnException(ExceptionContext context)
             {
+                _log.LogError("fuck that");
+
                 _logger.Log(context.Exception, context.HttpContext);
             }
         }
