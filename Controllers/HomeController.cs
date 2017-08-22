@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Google.Apis.Logging;
 using Google.Cloud.Diagnostics.Common;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.Extensions.Logging;
 
 namespace aspnetapp.Controllers
 {
@@ -14,8 +14,9 @@ namespace aspnetapp.Controllers
         private readonly IExceptionLogger _logger;
         private readonly ILogger _log;
         
-        public HomeController(IExceptionLogger exceptionLogger)
+        public HomeController(IExceptionLogger exceptionLogger, ILoggerFactory loggerFactory)
         {
+            _log = loggerFactory.CreateLogger<HomeController>();
             _logger = exceptionLogger;
         }
         
@@ -35,7 +36,7 @@ namespace aspnetapp.Controllers
             }
             catch (Exception ex)
             {
-                _log.Debug("hello friends");
+                _log.LogInformation("hello friends");
                 _logger.Log(ex, this.HttpContext);
             }
 
