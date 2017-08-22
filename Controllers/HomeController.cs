@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Google.Apis.Logging;
 using Google.Cloud.Diagnostics.Common;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.Extensions.Logging;
 
 namespace aspnetapp.Controllers
 {
@@ -36,6 +36,7 @@ namespace aspnetapp.Controllers
             }
             catch (Exception ex)
             {
+                _log.Debug("hello friends");
                 _logger.Log(ex, this.HttpContext);
             }
 
