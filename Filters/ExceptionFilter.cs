@@ -1,20 +1,21 @@
-﻿using Microsoft.AspNetCore.Mvc.Filters;
+﻿using Google.Cloud.Diagnostics.Common;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
 
 namespace aspnetapp.Filters
 {
         public class ExceptionFilter : IExceptionFilter
         {
-            private readonly ILogger _logger;
+            private readonly IExceptionLogger _logger;
         
-            public ExceptionFilter(ILogger<ExceptionFilter> logger)
+            public ExceptionFilter(IExceptionLogger exceptionLogger)
             {
-                _logger = logger;
+                _logger = exceptionLogger;
             }
         
             public void OnException(ExceptionContext context)
             {
-                _logger.LogError(500, context.Exception, context.Exception.Message);
+                _logger.Log(context.Exception, context.HttpContext);
             }
         }
 }
