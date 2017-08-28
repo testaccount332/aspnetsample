@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Google.Cloud.Diagnostics.Common;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -26,7 +23,7 @@ namespace aspapp2.Controllers
                 }
                 catch (Exception ex)
                 {
-                    _exceptionLogger.Log(ex, this.HttpContext);
+                    _exceptionLogger.Log(ex);
                 }
                 return View();
         }
