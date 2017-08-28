@@ -16,4 +16,4 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 COPY --from=build-env /usr/src/app/out .
 
-ENTRYPOINT ["dotnet", "Noir.Payments.Api.dll"]
+ENTRYPOINT ["dotnet", "aspnetapp2.dll"]
