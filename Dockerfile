@@ -2,7 +2,7 @@ FROM microsoft/aspnetcore-build:1.1.2-jessie AS build-env
 WORKDIR /usr/src/app
 
 # copy everything, restore as distinct layers and publish
-COPY Payments.Api /usr/src/app
+COPY . /usr/src/app
 RUN dotnet restore
 RUN dotnet publish -c Release -o out
 
