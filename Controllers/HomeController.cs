@@ -9,11 +9,11 @@ namespace aspapp2.Controllers
 {
     public class HomeController : Controller
     {
-
-      private readonly ILogger _logger;
-        public HomeController(ILogger<HomeController> logger)
+          private readonly ILogger _logger;
+        
+        public HomeController(ILoggerFactory loggerFactory)
         {
-            _logger = logger;
+            _logger = loggerFactory.CreateLogger<HomeController>();
         }
         public IActionResult Index()
         {
@@ -37,6 +37,7 @@ namespace aspapp2.Controllers
 
         public IActionResult Contact()
         {
+            throw new Exception("did this do");
             ViewData["Message"] = "Your contact page.";
 
             return View();
