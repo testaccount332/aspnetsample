@@ -1,13 +1,10 @@
-﻿using Google.Cloud.Diagnostics.AspNetCore;
+﻿using aspapp2.Filters;
+using Google.Cloud.Diagnostics.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Serilog;
-using Serilog.Events;
-using Serilog.Formatting.Compact;
-using Serilog.Sinks.SystemConsole.Themes;
 
 namespace aspapp2
 {
@@ -53,7 +50,10 @@ namespace aspapp2
             });
             
             // Add framework services.
-            services.AddMvc();
+            services.AddMvc(x =>
+            {
+                x.Filters.Add(typeof(ExceptionFilter));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
