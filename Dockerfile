@@ -1,16 +1,19 @@
-FROM microsoft/aspnetcore-build:2.0 AS build-env
-WORKDIR /app
+FROM microsoft/aspnetcore-build:1.1.2-jessie AS build-env
+WORKDIR /usr/src/app
 
-# copy csproj and restore as distinct layers
-COPY *.csproj ./
+# copy everything, restore as distinct layers and publish
+COPY Payments.Api /usr/src/app
 RUN dotnet restore
-
-# copy everything else and build
-COPY . ./
 RUN dotnet publish -c Release -o out
 
 # build runtime image
-FROM microsoft/aspnetcore:2.0
-WORKDIR /app
-COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "aspnetapp.dll"]
+FROM microsoft/aspnetcore:1.1.2-jessie
+WORKDIR /usr/src/app
+
+# Set local time to Australia/Sydney
+ENV TZ Australia/Sydney
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+COPY --from=build-env /usr/src/app/out .
+
+ENTRYPOINT ["dotnet", "Noir.Payments.Api.dll"]
