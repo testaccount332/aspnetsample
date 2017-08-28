@@ -26,18 +26,7 @@ namespace aspnetapp
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-            string projectId = "lloyd-test";
-            string serviceName = "aspnet";
-            string version = "1.0";
-
-            services.AddGoogleExceptionLogging(options =>
-            {
-                options.ProjectId = projectId;
-                options.ServiceName = serviceName;
-                options.Version = version;
-            });
-            
+        {   
             services.AddGoogleTrace(options =>
             {
                 options.ProjectId = projectId;
@@ -54,11 +43,10 @@ namespace aspnetapp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            app.UseGoogleExceptionLogging();
             app.UseGoogleTrace();
             
             string projectId = "lloyd-test";
-            loggerFactory.AddGoogle(projectId);
+            //loggerFactory.AddGoogle(projectId);
             loggerFactory.AddConsole();
 
             app.UseStaticFiles();

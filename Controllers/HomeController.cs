@@ -26,6 +26,16 @@ namespace aspnetapp.Controllers
         {
             using (_tracer.StartSpan(nameof(Index)))
             {
+                try
+                {
+                    throw new Exception("this is shiiite");
+                }
+                catch (Exception ex)
+                {
+                    _log.LogInformation("hello friends");
+                    _logger.Log(ex, this.HttpContext);
+                }
+                
                 return View();
             }
         }

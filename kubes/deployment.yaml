@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - env:
-        image: gcr.io/lloyd-test/aspnet:3b9ee83dfb4d99e761055a8c2d1a3f662b9ea77b
+        image: gcr.io/lloyd-test/aspnet:93b7cfaa0c9fbcfad707b85dfe967f4f727c953d
         name: aspnet
         ports:
         - name: payments-port
