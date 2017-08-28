@@ -47,6 +47,11 @@ namespace aspapp2
                 options.Version = version;
             });
             
+            services.AddGoogleTrace(options =>
+            {
+                options.ProjectId = projectId;
+            });
+            
             // Add framework services.
             services.AddMvc();
         }
@@ -56,9 +61,8 @@ namespace aspapp2
         {
             string projectId = "lloyd-test";
             loggerFactory.AddGoogle(projectId);
-            
             app.UseGoogleExceptionLogging();
-
+            app.UseGoogleTrace();
             
             //loggerFactory.AddSerilog();
 
