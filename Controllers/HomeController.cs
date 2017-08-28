@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Google.Cloud.Diagnostics.Common;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -10,10 +11,12 @@ namespace aspapp2.Controllers
     public class HomeController : Controller
     {
           private readonly ILogger _logger;
+        private readonly IExceptionLogger _exceptionLogger;
         
-        public HomeController(ILoggerFactory loggerFactory)
+        public HomeController(ILoggerFactory loggerFactory, IExceptionLogger exceptionLogger)
         {
             _logger = loggerFactory.CreateLogger<HomeController>();
+            _exceptionLogger = exceptionLogger;
         }
         public IActionResult Index()
         {
@@ -23,7 +26,7 @@ namespace aspapp2.Controllers
                 }
                 catch (Exception ex)
                 {
-                    _logger.LogError(500, ex, ex.Message);
+                    _exceptionLogger.Log(ex, this.HttpContext);
                 }
                 return View();
         }
