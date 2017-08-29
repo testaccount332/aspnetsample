@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Serilog;
+using Serilog.Events;
 using Serilog.Sinks.SystemConsole.Themes;
 
 namespace aspapp2
@@ -17,7 +18,8 @@ namespace aspapp2
                 .MinimumLevel.Information()
                 .Enrich.FromLogContext()
                 .WriteTo.Console(
-                    outputTemplate: "[{Level} {Timestamp:s} {RequestId}] {Message:lj}{NewLine}{Exception}",
+                    outputTemplate: "RID={RequestId} {Message:lj}{NewLine}{Exception}",
+                    standardErrorFromLevel: LogEventLevel.Warning,
                     theme: ConsoleTheme.None)
                 .CreateLogger();
             
