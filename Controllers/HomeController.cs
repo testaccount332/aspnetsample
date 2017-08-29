@@ -1,4 +1,5 @@
 ﻿using System;
+using aspapp2.Filters;
 using Google.Cloud.Diagnostics.Common;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -8,12 +9,10 @@ namespace aspapp2.Controllers
     public class HomeController : Controller
     {
           private readonly ILogger _logger;
-        private readonly IExceptionLogger _exceptionLogger;
         
-        public HomeController(ILoggerFactory loggerFactory, IExceptionLogger exceptionLogger)
+        public HomeController(ILoggerFactory loggerFactory)
         {
             _logger = loggerFactory.CreateLogger<HomeController>();
-            _exceptionLogger = exceptionLogger;
         }
         public IActionResult Index()
         {
@@ -23,7 +22,7 @@ namespace aspapp2.Controllers
                 }
                 catch (Exception ex)
                 {
-                    _exceptionLogger.Log(ex);
+                    _logger.LogInformation(ex.ToString());
                 }
                 return View();
         }
@@ -37,7 +36,7 @@ namespace aspapp2.Controllers
 
         public IActionResult Contact()
         {
-            throw new Exception("did this do");
+            throw new CardExistsException("did this do");
             ViewData["Message"] = "Your contact page.";
 
             return View();

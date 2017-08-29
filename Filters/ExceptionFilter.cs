@@ -6,16 +6,16 @@ namespace aspapp2.Filters
 {
     public class ExceptionFilter : IExceptionFilter
     {
-        private readonly IExceptionLogger _log;
+        private readonly ILogger _log;
         
-        public ExceptionFilter(IExceptionLogger log)
+        public ExceptionFilter(ILogger<ExceptionFilter> log)
         {
             _log = log;
         }
         
         public void OnException(ExceptionContext context)
         {
-            _log.Log(context.Exception);
+            _log.LogError(context.Exception.ToString());
         }
     }
 }
