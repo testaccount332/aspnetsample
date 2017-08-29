@@ -28,8 +28,18 @@ namespace aspapp2.Controllers
 
         public IActionResult Contact()
         {
+            try
+            {
+                WoWoo.DoShite();
+            }
+            catch (Exception e)
+            {
+                throw new CardExistsException("sdfs", e);
+            }
+            
             throw new CardExistsException("did this do");
             ViewData["Message"] = "Your contact page.";
+            
 
             return View();
         }
