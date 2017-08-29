@@ -16,6 +16,7 @@ namespace aspapp2.Filters
         public void OnException(ExceptionContext context)
         {
             _log.LogError(context.Exception.ToString().Replace("---", "   ..."));
+            context.ExceptionHandled = true;
         }
     }
 }
