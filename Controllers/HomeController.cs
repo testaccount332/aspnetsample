@@ -16,15 +16,7 @@ namespace aspapp2.Controllers
         }
         public IActionResult Index()
         {
-                try
-                {
-                    throw new Exception("this is shiiite");
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogInformation(ex.ToString());
-                }
-                return View();
+           return View();
         }
 
         public IActionResult About()
