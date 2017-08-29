@@ -3,6 +3,7 @@ using aspapp2.Filters;
 using Google.Cloud.Diagnostics.Common;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Prometheus;
 
 namespace aspapp2.Controllers
 {
@@ -22,6 +23,9 @@ namespace aspapp2.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
+            
+            var counter = Metrics.CreateCounter("myCounter", "some help about this");
+            counter.Inc(5.5);
             
             return View();
         }

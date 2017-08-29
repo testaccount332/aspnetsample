@@ -15,7 +15,7 @@ namespace aspapp2.Filters
         
         public void OnException(ExceptionContext context)
         {
-            _log.LogError(context.Exception.ToString());
+            _log.LogError(500, context.Exception, context.Exception.Message);
             context.ExceptionHandled = true;
         }
     }
