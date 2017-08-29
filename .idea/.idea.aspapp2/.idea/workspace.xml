@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9705c5c-47ca-4064-9933-044773475ee8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Startup.cs" afterPath="$PROJECT_DIR$/Startup.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Filters/ExceptionFilter.cs" afterPath="$PROJECT_DIR$/Filters/ExceptionFilter.cs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,17 +35,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExceptionFilter.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ExceptionFilter.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Filters/ExceptionFilter.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="52" />
+            <state relative-caret-position="240">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
-                <marker date="1503967360000" expanded="false" signature="6:114" ph="..." />
-                <marker date="1503967360000" expanded="true" signature="141:506" ph="{...}" />
-                <marker date="1503967360000" expanded="true" signature="195:504" ph="{...}" />
-                <marker date="1503967360000" expanded="true" signature="310:354" ph="{...}" />
-                <marker date="1503967360000" expanded="true" signature="421:498" ph="{...}" />
+                <marker date="1503992353000" expanded="false" signature="6:114" ph="..." />
+                <marker date="1503992353000" expanded="true" signature="141:528" ph="{...}" />
+                <marker date="1503992353000" expanded="true" signature="195:526" ph="{...}" />
+                <marker date="1503992353000" expanded="true" signature="310:354" ph="{...}" />
+                <marker date="1503992353000" expanded="true" signature="421:520" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -143,11 +143,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-572">
-              <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="337">
+              <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
               <folding>
                 <marker date="1503991584000" expanded="true" signature="6:299" ph="..." />
                 <marker date="1503991584000" expanded="true" signature="318:3175" ph="{...}" />
@@ -195,8 +195,8 @@
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/Filters/CardExistsException.cs" />
         <option value="$PROJECT_DIR$/Controllers/HomeController.cs" />
-        <option value="$PROJECT_DIR$/Filters/ExceptionFilter.cs" />
         <option value="$PROJECT_DIR$/Startup.cs" />
+        <option value="$PROJECT_DIR$/Filters/ExceptionFilter.cs" />
       </list>
     </option>
   </component>
@@ -376,12 +376,12 @@
       <workItem from="1503923954153" duration="6838000" />
       <workItem from="1503959082311" duration="1690000" />
       <workItem from="1503966947783" duration="2338000" />
-      <workItem from="1503982023896" duration="6794000" />
+      <workItem from="1503982023896" duration="7491000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17660000" />
+    <option name="totallyTimeSpent" value="18357000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -453,11 +453,11 @@
         <state relative-caret-position="225">
           <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
           <folding>
-            <marker date="1503967360000" expanded="false" signature="6:114" ph="..." />
-            <marker date="1503967360000" expanded="true" signature="141:506" ph="{...}" />
-            <marker date="1503967360000" expanded="true" signature="195:504" ph="{...}" />
-            <marker date="1503967360000" expanded="true" signature="310:354" ph="{...}" />
-            <marker date="1503967360000" expanded="true" signature="421:498" ph="{...}" />
+            <marker date="1503992353000" expanded="false" signature="6:114" ph="..." />
+            <marker date="1503992353000" expanded="true" signature="141:528" ph="{...}" />
+            <marker date="1503992353000" expanded="true" signature="195:526" ph="{...}" />
+            <marker date="1503992353000" expanded="true" signature="310:354" ph="{...}" />
+            <marker date="1503992353000" expanded="true" signature="421:520" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -588,11 +588,11 @@
         <state relative-caret-position="285">
           <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <marker date="1503967360000" expanded="false" signature="6:114" ph="..." />
-            <marker date="1503967360000" expanded="true" signature="141:506" ph="{...}" />
-            <marker date="1503967360000" expanded="true" signature="195:504" ph="{...}" />
-            <marker date="1503967360000" expanded="true" signature="310:354" ph="{...}" />
-            <marker date="1503967360000" expanded="true" signature="421:498" ph="{...}" />
+            <marker date="1503992353000" expanded="false" signature="6:114" ph="..." />
+            <marker date="1503992353000" expanded="true" signature="141:528" ph="{...}" />
+            <marker date="1503992353000" expanded="true" signature="195:526" ph="{...}" />
+            <marker date="1503992353000" expanded="true" signature="310:354" ph="{...}" />
+            <marker date="1503992353000" expanded="true" signature="421:520" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -834,20 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Filters/ExceptionFilter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="52" />
-          <folding>
-            <marker date="1503967360000" expanded="false" signature="6:114" ph="..." />
-            <marker date="1503967360000" expanded="true" signature="141:506" ph="{...}" />
-            <marker date="1503967360000" expanded="true" signature="195:504" ph="{...}" />
-            <marker date="1503967360000" expanded="true" signature="310:354" ph="{...}" />
-            <marker date="1503967360000" expanded="true" signature="421:498" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Filters/CardExistsException.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -877,8 +863,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-572">
-          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        <state relative-caret-position="337">
+          <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
           <folding>
             <marker date="1503991584000" expanded="true" signature="6:299" ph="..." />
             <marker date="1503991584000" expanded="true" signature="318:3175" ph="{...}" />
@@ -892,6 +878,20 @@
             <marker date="1503991584000" expanded="true" signature="2699:2814" ph="{...}" />
             <marker date="1503991584000" expanded="true" signature="2831:2915" ph="{...}" />
             <marker date="1503991584000" expanded="true" signature="2984:3155" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Filters/ExceptionFilter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1503992353000" expanded="false" signature="6:114" ph="..." />
+            <marker date="1503992353000" expanded="true" signature="141:528" ph="{...}" />
+            <marker date="1503992353000" expanded="true" signature="195:526" ph="{...}" />
+            <marker date="1503992353000" expanded="true" signature="310:354" ph="{...}" />
+            <marker date="1503992353000" expanded="true" signature="421:520" ph="{...}" />
           </folding>
         </state>
       </provider>
