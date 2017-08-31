@@ -16,7 +16,4 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 COPY --from=build-env /usr/src/app/out .
 
-
-EXPOSE 80 3000
-
 ENTRYPOINT ["dotnet", "aspapp2.dll"]

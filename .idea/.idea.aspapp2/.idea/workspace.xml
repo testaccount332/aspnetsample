@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9705c5c-47ca-4064-9933-044773475ee8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dockerfile" afterPath="$PROJECT_DIR$/Dockerfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Startup.cs" afterPath="$PROJECT_DIR$/Startup.cs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +17,8 @@
       <file leaf-file-name="HomeController.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controllers/HomeController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="219">
+              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
               <folding>
                 <marker date="1504136916000" expanded="true" signature="6:161" ph="..." />
                 <marker date="1504136916000" expanded="true" signature="192:1344" ph="{...}" />
@@ -81,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="240">
+              <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -147,11 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state relative-caret-position="630">
+              <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
               <folding>
                 <marker date="1504142761000" expanded="false" signature="6:317" ph="..." />
                 <marker date="1504142761000" expanded="true" signature="336:2485" ph="{...}" />
@@ -199,8 +198,8 @@
         <option value="$PROJECT_DIR$/Filters/CardExistsException.cs" />
         <option value="$PROJECT_DIR$/Filters/ExceptionFilter.cs" />
         <option value="$PROJECT_DIR$/Controllers/HomeController.cs" />
-        <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/Startup.cs" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
       </list>
     </option>
   </component>
@@ -380,12 +379,12 @@
       <workItem from="1503959082311" duration="1690000" />
       <workItem from="1503966947783" duration="2338000" />
       <workItem from="1503982023896" duration="11539000" />
-      <workItem from="1504133010827" duration="4308000" />
+      <workItem from="1504133010827" duration="5437000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26713000" />
+    <option name="totallyTimeSpent" value="27842000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -987,18 +986,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="630">
+          <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+          <folding>
+            <marker date="1504142761000" expanded="false" signature="6:317" ph="..." />
+            <marker date="1504142761000" expanded="true" signature="336:2485" ph="{...}" />
+            <marker date="1504142761000" expanded="true" signature="363:2483" ph="{...}" />
+            <marker date="1504142761000" expanded="true" signature="417:1324" ph="{...}" />
+            <marker date="1504142761000" expanded="true" signature="1551:1690" ph="{...}" />
+            <marker date="1504142761000" expanded="true" signature="1594:1678" ph="{...}" />
+            <marker date="1504142761000" expanded="true" signature="1908:2477" ph="{...}" />
+            <marker date="1504142761000" expanded="true" signature="2009:2124" ph="{...}" />
+            <marker date="1504142761000" expanded="true" signature="2141:2225" ph="{...}" />
+            <marker date="1504142761000" expanded="true" signature="2294:2465" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/HomeController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        <state relative-caret-position="219">
+          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
           <folding>
             <marker date="1504136916000" expanded="true" signature="6:161" ph="..." />
             <marker date="1504136916000" expanded="true" signature="192:1344" ph="{...}" />
@@ -1014,22 +1024,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Startup.cs">
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <marker date="1504142761000" expanded="false" signature="6:317" ph="..." />
-            <marker date="1504142761000" expanded="true" signature="336:2485" ph="{...}" />
-            <marker date="1504142761000" expanded="true" signature="363:2483" ph="{...}" />
-            <marker date="1504142761000" expanded="true" signature="417:1324" ph="{...}" />
-            <marker date="1504142761000" expanded="true" signature="1551:1690" ph="{...}" />
-            <marker date="1504142761000" expanded="true" signature="1594:1678" ph="{...}" />
-            <marker date="1504142761000" expanded="true" signature="1908:2477" ph="{...}" />
-            <marker date="1504142761000" expanded="true" signature="2009:2124" ph="{...}" />
-            <marker date="1504142761000" expanded="true" signature="2141:2225" ph="{...}" />
-            <marker date="1504142761000" expanded="true" signature="2294:2465" ph="{...}" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
