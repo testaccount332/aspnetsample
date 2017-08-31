@@ -31,9 +31,8 @@ namespace aspapp2
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
             
-            var metricServer = new MetricServer(port: 1234);
+            var metricServer = new MetricServer(3000);
             metricServer.Start();
-            
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -41,23 +40,6 @@ namespace aspapp2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-//            string projectId = "lloyd-test";
-//            string serviceName = "aspapp2";
-//            string version = "1.0";
-//            
-//            services.AddGoogleExceptionLogging(options =>
-//            {
-//                options.ProjectId = projectId;
-//                options.ServiceName = serviceName;
-//                options.Version = version;
-//            });
-//            
-//            services.AddGoogleTrace(options =>
-//            {
-//                options.ProjectId = projectId;
-//            });
-//            
-            // Add framework services.
             services.AddMvc(x =>
             {
                 x.Filters.Add(typeof(ExceptionFilter));
@@ -67,11 +49,6 @@ namespace aspapp2
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            //string projectId = "lloyd-test";
-            //loggerFactory.AddConsole();
-            //loggerFactory.AddGoogle(projectId);
-            //app.UseGoogleExceptionLogging();
-            //app.UseGoogleTrace();
             
             loggerFactory.AddSerilog();
 
